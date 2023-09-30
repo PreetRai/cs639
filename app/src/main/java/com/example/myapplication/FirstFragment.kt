@@ -34,9 +34,6 @@ class FirstFragment : Fragment() {
             val countString = showCountTextView!!.text.toString()
             var count = countString.toInt()
 
-            // Increment the count
-            count++
-
             // Update the showCountTextView
             showCountTextView!!.text = count.toString()
 
