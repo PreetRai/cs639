@@ -47,8 +47,8 @@
         <ImageButton
     android:id="@+id/toast_button"
             android:scaleType="fitCenter"
-    android:layout_width="50dp"
-    android:layout_height="50dp"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
     android:layout_marginStart="24dp"
     android:background="@android:color/transparent"
     android:src="@drawable/toast"
@@ -57,10 +57,14 @@
     app:layout_constraintTop_toBottomOf="@+id/textview_first" />
 
 
-        <Button
+        <ImageButton
+
+            android:background="@android:color/transparent"
+            android:src="@drawable/plusbutton"
+            android:scaleType="fitCenter"
             android:id="@+id/Count"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_marginStart="50dp"
             android:text="Count"
             app:layout_constraintBottom_toBottomOf="parent"
