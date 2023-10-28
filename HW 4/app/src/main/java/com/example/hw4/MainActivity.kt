@@ -1,6 +1,7 @@
 package com.example.hw4
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -15,17 +16,13 @@ import com.example.hw4.ui.theme.HW4Theme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
-            HW4Theme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Prithvi Raimangya")
-                }
-            }
-        }
+        setContentView(R.layout.activity_main)
+
+        val helloTextView = findViewById<TextView>(R.id.helloTextView)
+        val yourName = "Prithvi Raimangya" // Replace with your name
+
+        // Customize the message format
+        helloTextView.text = "Hello $yourName"
     }
 }
 
